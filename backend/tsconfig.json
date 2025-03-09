@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",           // Compile to the latest ECMAScript features
+      "module": "ESNext",           // Enable ES module syntax
+      "moduleResolution": "node",   // Resolve modules like Node.js
+      "esModuleInterop": true,      // Allow CommonJS interop
+      "strict": true,               // Enable strict type checking
+      "skipLibCheck": true,         // Skip type checking of library files for speed
+      "outDir": "./dist",           // Output directory for compiled files
+      "resolveJsonModule": true,    // Allow importing JSON files
+      "jsx": "react-jsx"            // For React JSX support (optional)
+    },
+    "include": ["src/**/*.ts"],     // Include all TypeScript files under `src`
+    "exclude": ["node_modules"]     // Exclude `node_modules`
+  }
+  
