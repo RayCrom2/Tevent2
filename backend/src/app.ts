@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Application } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes";
@@ -6,7 +6,7 @@ import connectDB from "./config/db";
 
 dotenv.config();
 
-const app = express();
+const app: Application = express();  // Ensure the app is typed correctly
 
 // Connect to database
 connectDB();
